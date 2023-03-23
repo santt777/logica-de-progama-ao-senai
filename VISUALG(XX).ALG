@@ -8,7 +8,7 @@ Var
 
  nome: caractere
  idade: inteiro
- nota1 , nota2 , nota3 , nota4 , media: real
+ nota1 , nota2 , nota3 , media: real
 
 Inicio
 escreva(" digite o seu nome  ")
@@ -21,10 +21,16 @@ escreval(" sua nota do 2 bimestre ")
 leia(nota2)
 escreval(" sua nota do 3 bimestre ")
 leia(nota3)
-escreval(" sua nota do 4 bimestre ")
-leia (nota4)
-media <- (nota1 + nota2 + nota3 + nota4) / 4
-escreval(" media final =->", media)
+
+media <- (nota1 + nota2 + nota3) / 3
+limpatela
+se media >=7 entao
+escreval("vc foi aprovado com a media de: " , media )
+senao
+escreval("voce foi reprovado com uma media de:" ,  media )
+fimse
+
+escreval("media final =->", media)
 escreval ("nome ->", nome)
 escreval("idade ->", idade)
 Fimalgoritmo
